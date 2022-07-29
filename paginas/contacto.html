@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../multimedia/WMS.jpg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WMS-water management solutions/contacto</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html"><img src="/multimedia/WMS.jpg" alt="logo"></a>
+            <ul type="none">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./quienes-somos.html">¿QUIENES SOMOS?</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./staff.html">STAFF</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <h1>CONTACTO</h1>
+        <hr class="contacto">
+        <br>
+        <section class="forms-y-contactos">
+            <div class="forms__form">
+                <form action="enviar.php" method="post" enctype="text/plain" netlify>
+                    <div class="form-box">
+                        <h2>MANDANOS UN MENSAJE:</h2>
+                        <br>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" name="nombre" placeholder="ingresar nombre completo" required>
+                        <label for="mail">Email:</label>
+                        <input type="email" name="mail" placeholder="ingresar email" required><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono" placeholder="ingresar tel." required>
+                        <label for="compañia">Nombre de compañia:</label>
+                        <input type="text" name="compañia" placeholder="ingresar compañia" required><br>
+                        <label for="mensaje">Escribir mensaje:</label><br>
+                        <textarea name="mensaje" id="" cols="30" rows="5" placeholder="escribir mensaje"></textarea><br>
+                        <input type="submit" value="enviar mensaje">
+                        <input type="reset" value="borrar">
+                    </div>    
+                </form> 
+                <br>
+                <p>¡ESTAMOS LISTOS PARA TRABAJAR <br> CONTIGO! SOLO MANDANOS UN MENSAJE <br> Y ESTAREMOS EN CONTACTO.</p> 
+            </div>  
+            <div class="forms__contactos">
+                <h2>CONTACTANOS</h2>
+                <br>
+                <div class="forms__contactos-phone-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <br>
+                <div class="forms__contactos-numeros">
+                    PE +51 991 646 931<br>
+                    NL +31 (0)6 3059 4964
+                    <br><br>
+                    Email: info@wms.com.pe
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <strong>PE:</strong><a href=""> +51 991 646 931</a> <br> <strong>NL:</strong> <a href=""> +31 (0)6 3059 4964</a> <br> <strong>Email:</strong> <a href=""> info@wms.com.pe</a>
+        </div>            
+            <div class="vl">
+        </div>
+        <div class="footer redes">
+            <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp-square"></i></a>
+        </div>           
+            <div class="vl">
+        </div>
+        <div class="footer__local">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </footer>
+    <a href="#" class="subir"><i class="fa-solid fa-angle-up"></i></a>
+</body>
+</html>
