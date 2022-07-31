@@ -14,9 +14,11 @@ header{
     width: 100%;
     position: relative;
 }
-nav img{
+.logo-img img{
     height: 60px;
     width: auto;
+    background-image: url(../multimedia/WMS.jpg);
+    background-size: cover;
 }
 
 nav{
