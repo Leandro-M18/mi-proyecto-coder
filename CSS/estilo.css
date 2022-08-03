@@ -123,7 +123,7 @@ ul li:hover{
     height: 535px;
     align-items: center;
     justify-content: center;
-    background-size: 1200px 800px;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
@@ -279,9 +279,13 @@ form h3{
     margin-right: 100px;
 }
 .quienes-img{ 
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    height: 300px;
+    width: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../multimedia/DSCN0200.JPG);
+    background-position: center;
 }
 .quienes-descripcion{
     padding: 40px;
@@ -305,6 +309,7 @@ form h3{
 .nuestros-proyectos h2{
     text-align: center;
 }
+
 .np-content{
     display: flex;
     justify-content: center;
@@ -313,8 +318,9 @@ form h3{
     margin-left: 100px;
 }
 .img-proyectos{
-    display: flex;
-    align-items: center;
+    background-image: url(../multimedia/DSCF2271-canal.JPG);
+    background-size: cover;
+    background-position: center;
 }
 .descripcion-de-proyectos{
     padding-left: 80px;
