@@ -77,6 +77,11 @@ form{
     font-size: 20px;
     color: #14213d;
 }
+.subir:hover{
+    text-decoration: none;
+    color: #14213d;
+    background-color: #f78432;
+}
 
 ul{
     list-style: circle;
@@ -140,7 +145,7 @@ header.container-fluid{
     display: grid;
     grid-template-columns: 30% auto;
     grid-template-rows: 15% auto;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     padding-top: 150px;
     margin-left: 100px;
     margin-right: 100px;
@@ -179,10 +184,12 @@ header.container-fluid{
 }
 .contactos-quienes h2{
     color: white;
+    margin-bottom: 50px;
 }
 .contactos-quienes-icon{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .contactos-quienes-icon i{
     font-size: 75px;
@@ -192,65 +199,15 @@ header.container-fluid{
     color: white;
     text-align: center;
 }
-.galeria-de-imagenes{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 200px ;
-    padding-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    grid-template-areas: 
-                        "img1 img2 img3 img4"
-                        "img5 img6 img7 img8";
-}
-.item{
-    border: solid white 2px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    color: white;
+
+#carouselExampleCaptions{
+    margin-bottom: 100px;
 }
 
-.item1{
-    grid-area: img1;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF0290-pipe.JPG);
-    background-size: cover;
-}
-.item2{
-    grid-area: img2;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCN0200.JPG);
-    background-size: cover;
-}
-.item3{
-    grid-area: img3;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF0187-tank.JPG);
-    background-size: cover;
-}
-.item4{
-    grid-area: img4;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9256.JPG);
-    background-size: cover;
-}
-.item5{
-    grid-area: img5;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Feflow1.png);
-    background-size: cover;
-}
-.item6{
-    grid-area: img6;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Hidrology\ Batimeter.png);
-    background-size: cover;
-}
-.item7{
-    grid-area: img7;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Hidrologia\ Balance\ A.png);
-    background-size: cover;
-}
-.item8{
-    grid-area: img8;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9994.JPG);
-    background-size: cover;
+#carouselExampleCaptions img{
+    height: 500px;
+    width: 100%;
+    filter: brightness(0.7);
 }
 
 form h3{
@@ -275,25 +232,30 @@ form h3{
     background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Kov\ lake.JPG); 
 }
 .img-descripcion{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .quienes-img{ 
-    height: 300px;
-    width: auto;
-    margin-top: 100px;
+    height: 380px;
+    width: 100%;
+    margin-top: 80px;
     overflow: hidden;
     background-size: cover;
     background-image: url(../multimedia/DSCN0200.JPG);
     background-position: center;
+    filter: brightness(0.8);
 }
 .quienes-descripcion{
     padding: 40px;
 }
 .que-como{
     display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #273249;
+    color: white;
 }
 .box{
     padding: 40px;
@@ -306,8 +268,12 @@ form h3{
     justify-content: center;
     padding-bottom: 10px;
 }
+.nuestros-proyectos{
+    margin-top: 50px;
+}
 .nuestros-proyectos h2{
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .np-content{
@@ -325,11 +291,21 @@ form h3{
 .descripcion-de-proyectos{
     padding-left: 80px;
 }
+
+.box h3{
+    justify-content: flex-start;
+}
+
 .credentials{
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #273249;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* margin-bottom: 100px; */
     justify-content: space-evenly;
+    
 }
 
                                                  /* servicios.html */
@@ -412,6 +388,11 @@ hr.contacto{
     margin-right: 475px;
     margin-left: 475px;
 }
+
+.contacto-main{
+    margin-top: 40px;
+}
+
 .forms__form p{
     font-size: 30px;
     font-weight: 800;
@@ -435,6 +416,11 @@ hr.contacto{
 .forms__contactos-phone-icon{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.horarios{
+    color: white;
 }
 .forms__contactos-phone-icon i{
     font-size: 75px;
