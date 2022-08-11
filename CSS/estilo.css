@@ -354,6 +354,13 @@ form h3{
     margin-top: 150px;
 }
 
+.todos-servicios img{
+    height: 15rem;
+    width: 25rem;
+    border: solid #14213d 2px;
+    margin: 20px 0px;
+}
+
                                                   /* staff.html */
 
 
