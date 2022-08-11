@@ -326,10 +326,23 @@ form h3{
     display: flexbox;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-.seg-fila-servicios{
-    margin-top: 100px;
+.primer-servicios{
+    margin-bottom: 50px;
 }
+.fila-servicios{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.prm{
+    margin-bottom: 50px;
+}
+.seg{
+    margin-bottom: 0px;
+}
+
 .servicios--individuales h2{
     text-align: center;
 }
@@ -626,20 +639,12 @@ footer{
     background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9256.JPG);
 }
 .staff-boxes{
-    display: grid;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 100px;
     margin-bottom: 150px;
     margin-left: 50px;
     margin-right: 50px;
-    row-gap: 50px;
-    column-gap: 40px;
-    grid-template-columns: 34% 33% 33%;
-    grid-template-rows: 300px 300px;
-    grid-template-areas: 
-                        "silvia descripcion1 descripcion1"
-                        "david descripcion2 descripcion2";
 }
 .staff-box-text-1{
     grid-area: descripcion1;
@@ -653,14 +658,17 @@ footer{
     background-size: cover;
     background-position: center;
     border: solid #071129 5px;
-    grid-area: silvia;
+    margin-bottom: 50px;
 }
 .staff-box__img-david{
     background-image: url(../multimedia/FOTO\ DAVID.jpg);
     background-size: cover;
     background-position: center;
     border: solid #071129 5px;
-    grid-area: david;
+    margin-bottom: 50px;
+}
+.david{
+    margin-top: 50px;
 }
 
 
@@ -672,6 +680,15 @@ footer{
 }
 .forms__form p{
     font-size: 17px;
+}
+
+.forms-y-contactos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-main{
+    text-align: center;
 }
 
 
