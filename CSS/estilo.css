@@ -1,743 +1,793 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  /* border: 2px red solid; */
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /* border: 2px red solid; */
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header {
-  background-color: #071129;
-  min-height: auto;
-  padding-top: 25px;
-  padding-bottom: 6px;
+    background-color: #071129;
+    min-height: auto;
+    padding-top: 25px;
+    padding-bottom: 6px;
 }
 
 .logo-img img {
-  height: 60px;
-  width: auto;
-  background-image: url(../multimedia/WMS.jpg);
-  background-size: cover;
+    height: 60px;
+    width: auto;
+    background-image: url(../multimedia/WMS.jpg);
+    background-size: cover;
 }
 
 nav {
-  text-align: center;
-  display: flex;
-  padding: 2% 3%;
-  justify-content: space-between;
-  align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
 }
+
 nav li {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
 }
 
 main.container-fluid {
-  padding: 0px;
+    padding: 0px;
 }
 
 p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
-  color: #14213d;
-  text-align: center;
-  font-size: 50px;
+    color: #14213d;
+    text-align: center;
+    font-size: 50px;
 }
 
 h2 {
-  color: #fca311;
-  font-size: 30px;
+    color: #fca311;
+    font-size: 30px;
 }
 
 h3 {
-  font-size: 20px;
-  color: #fca311;
+    font-size: 20px;
+    color: #fca311;
 }
 
 hr {
-  height: 4px;
-  background: black;
+    height: 4px;
+    background: black;
 }
 
 form {
-  color: #fca311;
+    color: #fca311;
 }
 
 .subir {
-  bottom: 20px;
-  right: 20px;
-  position: fixed;
-  background-color: #fca311;
-  border-radius: 10px;
-  border: solid #14213d 3px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: #14213d;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    background-color: #fca311;
+    border-radius: 10px;
+    border: solid #14213d 3px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #14213d;
 }
 
 .subir:hover {
-  text-decoration: none;
-  color: #14213d;
-  background-color: #f78432;
+    text-decoration: none;
+    color: #14213d;
+    background-color: #f78432;
 }
 
 ul {
-  list-style: circle;
+    list-style: circle;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  background: #14213d;
+    width: 10px;
+    background: #14213d;
 }
 
 ::-webkit-scrollbar-track {
-  background: #14213d;
-  /* see if grey goes better */
-  /* border-radius: 100vw; */
-  /* margin-block: 5px; */
+    background: #14213d;
+    /* see if grey goes better */
+    /* border-radius: 100vw; */
+    /* margin-block: 5px; */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fca311;
-  /* border-radius: 100vw; */
-  /* border: .15em solid white; */
+    background: #fca311;
+    /* border-radius: 100vw; */
+    /* border: .15em solid white; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #fc7311;
+    background: #fc7311;
 }
 
 /* header */
 ul a {
-  color: white;
-  text-decoration: none;
-  transition: all 0.5s;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
 }
 
 ul a:hover {
-  transition: 0.5s;
-  color: #fca311;
-  text-decoration: none;
+    transition: 0.5s;
+    color: #fca311;
+    text-decoration: none;
 }
 
 ul li {
-  transition: all 0.7s;
+    transition: all 0.7s;
 }
 
 ul li:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .main-header {
-  display: flex;
-  height: 535px;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+    display: flex;
+    height: 535px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 header.container-fluid {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 
 /* index.html */
 .index {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF0019.JPG);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF0019.JPG);
 }
 
 .body-quien {
-  display: grid;
-  grid-template-columns: 30% auto;
-  grid-template-rows: 15% auto;
-  padding-bottom: 100px;
-  padding-top: 150px;
-  margin-left: 100px;
-  margin-right: 100px;
-  column-gap: 40px;
-  grid-template-areas: "img1 quienes" "img1 parafo-quienes";
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 15% auto;
+    padding-bottom: 100px;
+    padding-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    column-gap: 40px;
+    grid-template-areas: "img1 quienes""img1 parafo-quienes";
 }
 
 .imagen-de-equipo {
-  grid-area: img1;
-  background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
-  background-size: cover;
+    grid-area: img1;
+    background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
+    background-size: cover;
 }
 
 .h3-quienes__index {
-  grid-area: quienes;
+    grid-area: quienes;
 }
 
 .parafo-quienes {
-  grid-area: parafo-quienes;
+    grid-area: parafo-quienes;
 }
 
 .main-header h1 {
-  color: white;
-  opacity: 100%;
+    color: white;
+    opacity: 100%;
 }
 
 .mandanos-mensaje {
-  display: flex;
-  padding: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+    display: flex;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .contactos-quienes {
-  background: #14213d;
-  padding: 40px;
-  text-align: center;
+    background: #14213d;
+    padding: 40px;
+    text-align: center;
 }
+
 .contactos-quienes h2 {
-  color: white;
-  margin-bottom: 50px;
+    color: white;
+    margin-bottom: 50px;
 }
 
 .contactos-quienes-icon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
 .contactos-quienes-icon i {
-  font-size: 75px;
-  color: #fca311;
+    font-size: 75px;
+    color: #fca311;
 }
 
 .contactos-quienes-numeros {
-  color: white;
-  text-align: center;
+    color: white;
+    text-align: center;
 }
+
 .contactos-quienes-numeros p {
-  margin: 0%;
+    margin: 0%;
 }
 
 #carouselExampleCaptions {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 }
+
 #carouselExampleCaptions img {
-  height: 500px;
-  width: 100%;
-  filter: brightness(0.7);
+    height: 500px;
+    width: 100%;
+    filter: brightness(0.7);
 }
 
 form h3 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .mandanos-mensaje {
-  display: grid;
-  grid-template-columns: 25% 20% 25% 30%;
-  margin-bottom: 100px;
-  grid-template-areas: "forms forms forms contactos";
+    display: grid;
+    grid-template-columns: 25% 20% 25% 30%;
+    margin-bottom: 100px;
+    grid-template-areas: "forms forms forms contactos";
 }
 
 .form-quienes {
-  grid-area: forms;
+    grid-area: forms;
 }
 
 .contactos-quienes {
-  grid-area: contactos;
+    grid-area: contactos;
 }
 
 /* quienes-somos.html */
 .quienes-somos {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Kov\ lake.JPG);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Kov\ lake.JPG);
 }
 
 .img-descripcion {
-  margin-left: 50px;
-  margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .quienes-img {
-  height: 380px;
-  width: 100%;
-  margin-top: 80px;
-  overflow: hidden;
-  background-size: cover;
-  background-image: url(../multimedia/DSCN0200.JPG);
-  background-position: center;
-  filter: brightness(0.8);
+    height: 380px;
+    width: 100%;
+    margin-top: 80px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../multimedia/DSCN0200.JPG);
+    background-position: center;
+    filter: brightness(0.8);
 }
 
 .quienes-descripcion {
-  padding: 40px;
+    padding: 40px;
 }
 
 .que-como {
-  display: flex;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background: #273249;
-  color: white;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #273249;
+    color: white;
 }
 
 .box {
-  padding: 40px;
+    padding: 40px;
 }
 
 .pq {
-  width: 600px;
+    width: 600px;
 }
 
 .box h3 {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 .nuestros-proyectos {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 .nuestros-proyectos h2 {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .np-content {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-
-.img-proyectos {
-  background-image: url(../multimedia/DSCF2271-canal.JPG);
-  background-size: cover;
-  background-position: center;
-}
-
-.descripcion-de-proyectos {
-  padding-left: 80px;
-}
-
-.box h3 {
-  justify-content: flex-start;
-}
-
-.credentials {
-  padding-left: 40px;
-  padding-right: 40px;
-  background: #273249;
-  color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-  justify-content: space-evenly;
-}
-
-/* servicios.html */
-.servicios {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCN0200.JPG);
-}
-
-.titulo-servicios {
-  text-align: center;
-}
-
-.servicios--img--descp {
-  display: flex;
-  padding: 20px;
-}
-
-.servicios--individuales {
-  display: flexbox;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.servicios--individuales h2 {
-  text-align: center;
-}
-
-.primer-servicios {
-  margin-bottom: 50px;
-}
-
-.fila-servicios {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-.prm {
-  margin-bottom: 50px;
-}
-
-.seg {
-  margin-bottom: 0px;
-}
-
-.servicio--img {
-  text-align: center;
-}
-
-.todos-servicios {
-  margin-bottom: 150px;
-  margin-top: 150px;
-}
-.todos-servicios img {
-  height: 15rem;
-  width: 25rem;
-  border: solid #14213d 2px;
-  margin: 20px 0px;
-}
-
-/* staff.html */
-.staff {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
-}
-
-.staff-boxes {
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
-
-.david {
-  margin-top: 100px;
-}
-
-.staff-box__img-silvia {
-  background-image: url(../multimedia/20200729_203050.jpg);
-  background-size: cover;
-  background-position: center;
-  border: solid #071129 5px;
-  grid-area: silvia;
-  height: 300px;
-}
-
-.staff-box__img-david {
-  background-image: url(../multimedia/FOTO\ DAVID.jpg);
-  background-size: cover;
-  background-position: center;
-  border: solid #071129 5px;
-  grid-area: david;
-  height: 300px;
-}
-
-/* contacto.html */
-hr.contacto {
-  margin-right: 475px;
-  margin-left: 475px;
-}
-
-.contacto-main {
-  margin-top: 40px;
-}
-
-.forms__form p {
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.forms-y-contactos {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  margin-bottom: 150px;
-}
-
-.forms__contactos {
-  background: #14213d;
-  padding: 20px;
-}
-.forms__contactos h2 {
-  color: white;
-}
-
-.forms__contactos-phone-icon {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.horarios {
-  color: white;
-}
-
-.forms__contactos-phone-icon i {
-  font-size: 75px;
-  color: #fca311;
-}
-
-.forms__contactos-numeros {
-  color: white;
-  text-align: center;
-}
-
-/* footer */
-.redes a i {
-  padding-left: 20px;
-  padding-right: -20px;
-}
-
-footer {
-  background-color: #071129;
-  height: 109px;
-  width: 100%;
-  position: relative;
-  bottom: 0%;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.vl {
-  border-left: 5px solid #fca311;
-  height: 50px;
-  border-radius: 10px;
-}
-
-.footer__local i {
-  color: #fca311;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-.footer a:hover {
-  color: #fca311;
-}
-.footer strong {
-  font-weight: 600;
-}
-
-.redes i {
-  font-size: 45px;
-  color: white;
-  letter-spacing: 20px;
-}
-
-.redes i:hover {
-  color: #fca311;
-}
-
-@media only screen and (max-width: 767px) {
-  nav img {
-    height: 50px;
-    width: auto;
-  }
-  ul a {
-    font-size: 15px;
-  }
-  /* mobile index */
-  .body-quien {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 10% auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    column-gap: 40px;
-    grid-template-areas: "img1" "quienes" "parafo-quienes";
-  }
-  .imagen-de-equipo {
-    grid-area: img1;
-    background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
-    background-size: cover;
-  }
-  .h3-quienes__index {
-    grid-area: quienes;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-end;
-  }
-  .parafo-quienes {
-    grid-area: parafo-quienes;
-  }
-  .main-header h1 {
-    color: white;
-    opacity: 100%;
-  }
-  .galeria-de-imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px 200px 200px;
-    padding-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8";
-  }
-  .item {
-    border: solid white 2px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    color: white;
-  }
-  .item1 {
-    grid-area: img1;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF0290-pipe.JPG);
-    background-size: cover;
-  }
-  .item2 {
-    grid-area: img2;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCN0200.JPG);
-    background-size: cover;
-  }
-  .item3 {
-    grid-area: img3;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF0187-tank.JPG);
-    background-size: cover;
-  }
-  .item4 {
-    grid-area: img4;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
-    background-size: cover;
-  }
-  .item5 {
-    grid-area: img5;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Feflow1.png);
-    background-size: cover;
-  }
-  .item6 {
-    grid-area: img6;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Hidrology\ Batimeter.png);
-    background-size: cover;
-  }
-  .item7 {
-    grid-area: img7;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Hidrologia\ Balance\ A.png);
-    background-size: cover;
-  }
-  .item8 {
-    grid-area: img8;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9994.JPG);
-    background-size: cover;
-  }
-  .mandanos-mensaje {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin-bottom: 100px;
-    row-gap: 5rem;
-    grid-template-areas: "forms" "contactos";
-  }
-  .form-quienes {
-    grid-area: forms;
-  }
-  .contactos-quienes {
-    grid-area: contactos;
-  }
-  /* mobile quienes somos */
-  .np-content {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 40px;
     margin-right: 100px;
     margin-left: 100px;
-  }
-  .img-proyectos {
+}
+
+.img-proyectos {
+    background-image: url(../multimedia/DSCF2271-canal.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.descripcion-de-proyectos {
+    padding-left: 80px;
+}
+
+.box h3 {
+    justify-content: flex-start;
+}
+
+.credentials {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #273249;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-evenly;
+}
+
+/* servicios.html */
+.servicios {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCN0200.JPG);
+}
+
+.titulo-servicios {
+    text-align: center;
+}
+
+.servicios--img--descp {
     display: flex;
+    padding: 20px;
+}
+
+.servicios--individuales {
+    display: flexbox;
     align-items: center;
-    align-content: center;
     justify-content: center;
-  }
-  .descripcion-de-proyectos {
-    padding: 0px;
-  }
-  /* mobile staff */
-  .staff {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
-  }
-  .staff-boxes {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 100px;
+    text-align: center;
+}
+
+.servicios--individuales h2 {
+    text-align: center;
+}
+
+.primer-servicios {
+    margin-bottom: 50px;
+}
+
+.fila-servicios {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.prm {
+    margin-bottom: 50px;
+}
+
+.seg {
+    margin-bottom: 0px;
+}
+
+.servicio--img {
+    text-align: center;
+}
+
+.todos-servicios {
     margin-bottom: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .staff-box-text-1 {
-    grid-area: descripcion1;
-  }
-  .staff-box-text-2 {
-    grid-area: descripcion2;
-  }
-  .staff-box__img-silvia {
+    margin-top: 150px;
+}
+
+.todos-servicios img {
+    height: 15rem;
+    width: 25rem;
+    border: solid #14213d 2px;
+    margin: 20px 0px;
+}
+
+/* staff.html */
+.staff {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
+}
+
+.staff-boxes {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.david {
+    margin-top: 100px;
+}
+
+.staff-box__img-silvia {
     background-image: url(../multimedia/20200729_203050.jpg);
     background-size: cover;
     background-position: center;
     border: solid #071129 5px;
-    margin-bottom: 50px;
-  }
-  .staff-box__img-david {
+    grid-area: silvia;
+    height: 300px;
+}
+
+.staff-box__img-david {
     background-image: url(../multimedia/FOTO\ DAVID.jpg);
     background-size: cover;
     background-position: center;
     border: solid #071129 5px;
-    margin-bottom: 50px;
-  }
-  .david {
-    margin-top: 50px;
-  }
-  /* contactos mobile */
-  .form-box h2 {
-    font-size: 1.7rem;
-  }
-  .forms__form p {
-    font-size: 17px;
-  }
-  .forms-y-contactos {
+    grid-area: david;
+    height: 300px;
+}
+
+/* contacto.html */
+hr.contacto {
+    margin-right: 475px;
+    margin-left: 475px;
+}
+
+.contacto-main {
+    margin-top: 40px;
+}
+
+.forms__form p {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.forms-y-contactos {
     display: flex;
-    flex-direction: column;
-  }
-  .contacto-main {
-    text-align: center;
-  }
-  /* mobile footer */
-  footer {
-    height: 80px;
-  }
-  .footer {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 13px;
-  }
-  .redes i {
-    font-size: 25px;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 150px;
+}
+
+.forms__contactos {
+    background: #14213d;
+    padding: 20px;
+}
+
+.forms__contactos h2 {
     color: white;
-    letter-spacing: 0px;
-  }
-  .redes a i {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-  .footer__local {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 13px;
-  }
-  .footer__local i {
-    font-size: 20px;
-  }
+}
+
+.forms__contactos-phone-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.horarios {
+    color: white;
+}
+
+.forms__contactos-phone-icon i {
+    font-size: 75px;
+    color: #fca311;
+}
+
+.forms__contactos-numeros {
+    color: white;
+    text-align: center;
+}
+
+/* footer */
+.redes a i {
+    padding-left: 20px;
+    padding-right: -20px;
+}
+
+footer {
+    background-color: #071129;
+    height: 109px;
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vl {
+    border-left: 5px solid #fca311;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.footer__local i {
+    color: #fca311;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fca311;
+}
+
+.footer strong {
+    font-weight: 600;
+}
+
+.redes i {
+    font-size: 45px;
+    color: white;
+    letter-spacing: 20px;
+}
+
+.redes i:hover {
+    color: #fca311;
+}
+
+@media only screen and (max-width: 767px) {
+    nav img {
+        height: 50px;
+        width: auto;
+    }
+
+    ul a {
+        font-size: 15px;
+    }
+
+    /* mobile index */
+    .body-quien {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 10% auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        column-gap: 40px;
+        grid-template-areas: "img1""quienes""parafo-quienes";
+    }
+
+    .imagen-de-equipo {
+        grid-area: img1;
+        background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
+        background-size: cover;
+    }
+
+    .h3-quienes__index {
+        grid-area: quienes;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-end;
+    }
+
+    .parafo-quienes {
+        grid-area: parafo-quienes;
+    }
+
+    .main-header h1 {
+        color: white;
+        opacity: 100%;
+    }
+
+    .galeria-de-imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px 200px 200px;
+        padding-bottom: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        grid-template-areas: "img1 img2""img3 img4""img5 img6""img7 img8";
+    }
+
+    .item {
+        border: solid white 2px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        color: white;
+    }
+
+    .item1 {
+        grid-area: img1;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF0290-pipe.JPG);
+        background-size: cover;
+    }
+
+    .item2 {
+        grid-area: img2;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCN0200.JPG);
+        background-size: cover;
+    }
+
+    .item3 {
+        grid-area: img3;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF0187-tank.JPG);
+        background-size: cover;
+    }
+
+    .item4 {
+        grid-area: img4;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
+        background-size: cover;
+    }
+
+    .item5 {
+        grid-area: img5;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Feflow1.png);
+        background-size: cover;
+    }
+
+    .item6 {
+        grid-area: img6;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Hidrology\ Batimeter.png);
+        background-size: cover;
+    }
+
+    .item7 {
+        grid-area: img7;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Hidrologia\ Balance\ A.png);
+        background-size: cover;
+    }
+
+    .item8 {
+        grid-area: img8;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9994.JPG);
+        background-size: cover;
+    }
+
+    .mandanos-mensaje {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-bottom: 100px;
+        row-gap: 5rem;
+        grid-template-areas: "forms""contactos";
+    }
+
+    .form-quienes {
+        grid-area: forms;
+    }
+
+    .contactos-quienes {
+        grid-area: contactos;
+    }
+
+    /* mobile quienes somos */
+    .np-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .img-proyectos {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .descripcion-de-proyectos {
+        padding: 0px;
+    }
+
+    /* mobile staff */
+    .staff {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
+    }
+
+    .staff-boxes {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .staff-box-text-1 {
+        grid-area: descripcion1;
+    }
+
+    .staff-box-text-2 {
+        grid-area: descripcion2;
+    }
+
+    .staff-box__img-silvia {
+        background-image: url(../multimedia/20200729_203050.jpg);
+        background-size: cover;
+        background-position: center;
+        border: solid #071129 5px;
+        margin-bottom: 50px;
+    }
+
+    .staff-box__img-david {
+        background-image: url(../multimedia/FOTO\ DAVID.jpg);
+        background-size: cover;
+        background-position: center;
+        border: solid #071129 5px;
+        margin-bottom: 50px;
+    }
+
+    .david {
+        margin-top: 50px;
+    }
+
+    /* contactos mobile */
+    .form-box h2 {
+        font-size: 1.7rem;
+    }
+
+    .forms__form p {
+        font-size: 17px;
+    }
+
+    .forms-y-contactos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-main {
+        text-align: center;
+    }
+
+    /* mobile footer */
+    footer {
+        height: 80px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 13px;
+    }
+
+    .redes i {
+        font-size: 25px;
+        color: white;
+        letter-spacing: 0px;
+    }
+
+    .redes a i {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .footer__local {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 13px;
+    }
+
+    .footer__local i {
+        font-size: 20px;
+    }
 }
 
 /*# sourceMappingURL=estilo.css.map */
