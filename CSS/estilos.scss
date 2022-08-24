@@ -5,19 +5,47 @@
     box-sizing: border-box;
     /* border: 2px red solid; */
 }
+
+@mixin mbp($margin, $border, $padding) {
+    margin: $margin;
+    border: $border;
+    padding: $padding;
+}
+@mixin dim($height, $width) {
+    height: $height;
+    width: $width;
+}
+@mixin padding($padt, $padb, $padl, $padr) {
+    padding-top: $padt;
+    padding-bottom: $padb;
+    padding-left: $padl;
+    padding-right: $padr;
+}
+@mixin font($col, $size, $weight, $txtd) {
+    color: $col;
+    font-size: $size;
+    font-weight: $weight;
+    text-decoration: $txtd;
+}
+
+$width: 300px;
+$height: $width;
+$h2s:40px;
+$h3s: 30px;
+$hw: 600;
+
+
 html{
     scroll-behavior: smooth;
 }
 header{
+    @include padding(25px, 6px, 0px, 0px);
     background-color: #071129;
     min-height: auto;
-    padding-top: 25px;
-    padding-bottom: 6px;
 }
 
 .logo-img img{
-    height: 60px;
-    width: auto;
+    @include dim(60px, auto);
     background-image: url(../multimedia/WMS.jpg);
     background-size: cover;
 }
@@ -42,17 +70,15 @@ p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1{
-    color: #14213d;
+    @include font(inherit, 50px, inherit, none);
     text-align: center;
-    font-size: 50px;
 }
 h2{
-    color: #fca311;
-    font-size: 30px;
+    @include font(#fca311, $h2s, $hw, none);
+
 }
 h3{
-    font-size: 20px;
-    color: #fca311;
+    @include font(#fca311, $h3s, inherit, none);
 }
 hr{
     height: 4px;
@@ -68,18 +94,14 @@ form{
     background-color: #fca311;
     border-radius: 10px;
     border: solid #14213d 3px;
-    height: 30px;
-    width: 30px;
+    @include dim(30px, 30px);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    color: #14213d;
+    @include font(#14213d, 20px, inherit, none);
 }
 .subir:hover{
-    text-decoration: none;
-    color: #14213d;
+    @include font(#14213d, inherit, inherit, none);
     background-color: #f78432;
 }
 
@@ -92,14 +114,9 @@ ul{
 }
 ::-webkit-scrollbar-track{
     background: #14213d;
-    /* see if grey goes better */
-    /* border-radius: 100vw; */
-    /* margin-block: 5px; */
 }
 ::-webkit-scrollbar-thumb{
     background: #fca311;
-    /* border-radius: 100vw; */
-    /* border: .15em solid white; */
 }
 ::-webkit-scrollbar-thumb:hover{
     background: #fc7311;
@@ -108,14 +125,12 @@ ul{
                                             /* header */
 
 ul a{
-    color: white;
-    text-decoration: none;
+    @include font(white, inherit, inherit, none);
     transition: all 0.5s;
 }
 ul a:hover{
+    @include font(#fca311, inherit, inherit, none);
     transition:0.5s;
-    color: #fca311;
-    text-decoration: none;
 }
 ul li{
     transition: all 0.7s;
@@ -145,25 +160,33 @@ header.container-fluid{
     display: grid;
     grid-template-columns: 30% auto;
     grid-template-rows: 15% auto;
-    padding-bottom: 100px;
-    padding-top: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
+    @include padding(150px, 100px, 0px, 0px);
+    margin: 0px 100px;
     column-gap: 40px;
+    row-gap: 20px;
     grid-template-areas: "img1 quienes"
                         "img1 parafo-quienes";
 }
 .imagen-de-equipo{
     grid-area: img1;
+    @include dim($height, $width);
     background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
     background-size: cover;
     
 }
 .h3-quienes__index{
     grid-area: quienes;
+    h3{
+        @include font(#fca311, $h3s, $hw, none);
+        text-transform: uppercase;
+    }
 }
 .parafo-quienes{
-    grid-area: parafo-quienes
+    grid-area: parafo-quienes;
+    p{
+        font-size: 18px;
+        line-height: 2em;
+    }
 }
 
 .main-header h1{
@@ -174,15 +197,15 @@ header.container-fluid{
 .mandanos-mensaje{
     display: flex;
     padding: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px 100px;
 }
 .contactos-quienes{
     background: #14213d;
     padding: 40px;
     text-align: center;
+    @include dim(400px, 400px);
     h2{
-        color: white;
+        @include font(white, 35px, $hw, none);
         margin-bottom: 50px;
     }
 }
@@ -208,8 +231,7 @@ header.container-fluid{
 #carouselExampleCaptions{
     margin-bottom: 100px;
     img{
-        height: 500px;
-        width: 100%;
+        @include dim(500px, 100%);
         filter: brightness(0.7);
     }
 }
@@ -236,12 +258,10 @@ form h3{
     background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Kov\ lake.JPG); 
 }
 .img-descripcion{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0px 50px;
 }
 .quienes-img{ 
-    height: 380px;
-    width: 100%;
+    @include dim(380px, 100%);
     margin-top: 80px;
     overflow: hidden;
     background-size: cover;
@@ -254,10 +274,8 @@ form h3{
 }
 .que-como{
     display: flex;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 0px;
+    padding: 0px 40px;
     background: #273249;
     color: white;
 }
@@ -284,8 +302,7 @@ form h3{
     display: flex;
     justify-content: center;
     padding: 40px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin: 0px 100px;
 }
 .img-proyectos{
     background-image: url(../multimedia/DSCF2271-canal.JPG);
@@ -301,14 +318,11 @@ form h3{
 }
 
 .credentials{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding:0px 40px;
     background: #273249;
     color: white;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     justify-content: space-evenly;
-    
 }
 
                                                  /* servicios.html */
@@ -351,13 +365,30 @@ form h3{
     text-align: center;
 }
 .todos-servicios{
-    margin-bottom: 150px;
-    margin-top: 150px;
+    margin: 150px 0px;
     img{
-        height: 15rem;
-        width: 25rem;
-        border: solid #14213d 2px;
-        margin: 20px 0px;
+        @include dim(15rem, 25rem);
+        @include mbp(20px 0px, solid #14213d 2px, 0px)
+    }
+}
+
+$mapa:  (
+    ivory: indigo, 
+    lightgreen: peru,
+    silver: teal,
+    lightblue: indianred,
+
+);
+
+@each $col, $font in $mapa {
+    .btn--#{$col} {
+        background-color: $col;
+        height: 650px;
+        border:$font 5px solid;
+        color: $font;
+        h2{
+            color:$font;
+        }
     }
 }
 
@@ -368,8 +399,7 @@ form h3{
     background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9256.JPG);
 }
 .staff-boxes{
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin: 150px 0px;
 }
 
 .david{
@@ -386,18 +416,13 @@ form h3{
 }
 .staff-box__img-david{
     background-image: url(../multimedia/FOTO\ DAVID.jpg);
-    background-size: cover;
-    background-position: center;
-    border: solid #071129 5px;
-    grid-area: david;
-    height: 300px;
+    @extend .staff-box__img-silvia
 }
 
-                                                       /* contacto.html */
+                                                    /* contacto.html */
 
 hr.contacto{
-    margin-right: 475px;
-    margin-left: 475px;
+    margin: 0px 475px;
 }
 
 .contacto-main{
@@ -405,8 +430,7 @@ hr.contacto{
 }
 
 .forms__form p{
-    font-size: 30px;
-    font-weight: 800;
+    @include font(inherit, 30px, 800, none)
 }
 .forms-y-contactos{
     display: flex;
@@ -425,8 +449,7 @@ hr.contacto{
 .forms__contactos-phone-icon{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0px;
 }
 .horarios{
     color: white;
@@ -444,12 +467,10 @@ hr.contacto{
 
 .redes a i{
     padding-left: 20px;
-    padding-right: -20px;
 }
 footer{
     background-color: #071129;
-    height: 109px;
-    width: 100%;
+    @include dim(109px, 100%);
     position: relative;
     bottom: 0%;
     color: white;
@@ -508,9 +529,9 @@ footer{
     grid-template-rows: 300px 10% auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    column-gap: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    column-gap: 0px;
     grid-template-areas: "img1"
                         "quienes"
                         "parafo-quienes";
@@ -519,6 +540,7 @@ footer{
     grid-area: img1;
     background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
     background-size: cover;
+    width: 100%;
     
 }
 .h3-quienes__index{
@@ -527,9 +549,15 @@ footer{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-end;
+    padding: 0% 10%;
 }
 .parafo-quienes{
-    grid-area: parafo-quienes
+    grid-area: parafo-quienes;
+    padding: 0% 10%;
+    p{
+        font-size: 16px;
+        line-height: normal;
+    }
 }
 
 .main-header h1{
@@ -537,67 +565,8 @@ footer{
     opacity: 100%;
 }
 
-.galeria-de-imagenes{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px 200px 200px;
-    padding-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    grid-template-areas: 
-            "img1 img2"
-            "img3 img4"
-            "img5 img6"
-            "img7 img8";
-}
-.item{
-    border: solid white 2px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    color: white;
-}
-
-.item1{
-    grid-area: img1;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF0290-pipe.JPG);
-    background-size: cover;
-}
-.item2{
-    grid-area: img2;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCN0200.JPG);
-    background-size: cover;
-}
-.item3{
-    grid-area: img3;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF0187-tank.JPG);
-    background-size: cover;
-}
-.item4{
-    grid-area: img4;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9256.JPG);
-    background-size: cover;
-}
-.item5{
-    grid-area: img5;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Feflow1.png);
-    background-size: cover;
-}
-.item6{
-    grid-area: img6;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Hidrology\ Batimeter.png);
-    background-size: cover;
-}
-.item7{
-    grid-area: img7;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/Hidrologia\ Balance\ A.png);
-    background-size: cover;
-}
-.item8{
-    grid-area: img8;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9994.JPG);
-    background-size: cover;
+.carousel{
+    padding: 0%;
 }
 
 .mandanos-mensaje{
@@ -606,6 +575,8 @@ footer{
     grid-template-rows: auto auto;
     margin-bottom: 100px;
     row-gap: 5rem;
+    padding: 0%;
+    margin-left: 0px;
     grid-template-areas: 
                 "forms"
                 "contactos";
@@ -650,12 +621,8 @@ footer{
     background-image:linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../multimedia/DSCF9256.JPG);
 }
 .staff-boxes{
-    padding-left: 50px;
-    padding-right: 50px;
     margin-top: 100px;
     margin-bottom: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 .staff-box-text-1{
     grid-area: descripcion1;
@@ -706,21 +673,28 @@ footer{
 
                                                     /* mobile footer */
     footer{
-        height: 80px;
-    }
-    .footer{
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 13px;
+        height: 180px;
+        flex-direction: column;
+        .num{
+            display: none;
+        }
+        .footer{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 13px;
+        }
     }
     .redes i{
-    font-size: 25px;
+    font-size: 50px;
     color: white;
-    letter-spacing: 0px;
+    letter-spacing: 10px;
     }
     .redes a i{
         padding-left: 3px;
         padding-right: 3px;
+    }
+    .vl{
+        display: none;
     }
     .footer__local{
         padding-left: 10px;
