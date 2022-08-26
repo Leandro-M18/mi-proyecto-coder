@@ -740,7 +740,7 @@ footer {
     grid-area: forms;
   }
   .form-box-in {
-    padding-right: 0px;
+    padding: 0px 10px;
   }
   .form-box-in .nom-in input {
     width: 100%;
