@@ -11,7 +11,7 @@ html {
 }
 
 header {
-  padding-top: 25px;
+  padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 0px;
   padding-right: 0px;
@@ -27,7 +27,6 @@ header {
 }
 
 nav {
-  text-align: center;
   display: flex;
   padding: 2% 3%;
   justify-content: space-between;
@@ -126,7 +125,7 @@ ul {
 }
 
 /* header */
-ul a {
+a {
   color: white;
   font-size: inherit;
   font-weight: inherit;
@@ -134,7 +133,7 @@ ul a {
   transition: all 0.5s;
 }
 
-ul a:hover {
+a:hover {
   color: #fca311;
   font-size: inherit;
   font-weight: inherit;
@@ -142,12 +141,17 @@ ul a:hover {
   transition: 0.5s;
 }
 
-ul li {
-  transition: all 0.7s;
+.navbar-toggler-icon {
+  border-radius: 5px;
+  background: #fca311;
 }
 
-ul li:hover {
-  transform: scale(1.1);
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: #fca311;
 }
 
 .main-header {
@@ -158,6 +162,10 @@ ul li:hover {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+}
+
+.navbar-brand img {
+  width: 10%;
 }
 
 header.container-fluid {
@@ -276,6 +284,35 @@ form h3 {
 
 .form-quienes {
   grid-area: forms;
+}
+
+.form-box-in {
+  padding-right: 50px;
+}
+.form-box-in .nom-in input {
+  width: 555px;
+}
+.form-box-in .mail-in input {
+  width: 658px;
+}
+.form-box-in .tel-in input {
+  width: 633px;
+}
+.form-box-in .comp-in input {
+  width: 525px;
+}
+.form-box-in textarea {
+  width: 710px;
+  resize: none;
+  height: 250px;
+}
+.form-box-in .sub-in {
+  margin-bottom: 25px;
+  width: 30%;
+}
+.form-box-in .bor-in {
+  margin-bottom: 25px;
+  width: 30%;
 }
 
 .contactos-quienes {
@@ -513,30 +550,59 @@ hr.contacto {
 
 .forms__contactos {
   background: #14213d;
-  padding: 20px;
+  padding: 50px 30px;
+  text-align: center;
 }
 .forms__contactos h2 {
   color: white;
+  font-size: 45px;
+}
+
+.form-box {
+  padding-right: 250px;
+}
+.form-box h2 {
+  margin: 30px 0px;
+}
+.form-box input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-box textarea {
+  width: 100%;
+  resize: none;
+  height: 250px;
+}
+.form-box .sub {
+  margin-bottom: 25px;
+  width: 30%;
+}
+.form-box .bor {
+  margin-bottom: 25px;
+  width: 30%;
 }
 
 .forms__contactos-phone-icon {
   display: flex;
   justify-content: center;
-  margin: 40px 0px;
+  margin: 75px 0px;
 }
-
-.horarios {
-  color: white;
-}
-
 .forms__contactos-phone-icon i {
-  font-size: 75px;
+  font-size: 110px;
   color: #fca311;
 }
 
 .forms__contactos-numeros {
   color: white;
   text-align: center;
+  font-size: 20px;
+}
+
+.contacto-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: static;
 }
 
 /* footer */
@@ -590,6 +656,7 @@ footer {
   color: #fca311;
 }
 
+/*MOBILE*/
 @media only screen and (max-width: 767px) {
   nav img {
     height: 50px;
@@ -597,6 +664,9 @@ footer {
   }
   ul a {
     font-size: 15px;
+  }
+  .navbar-brand img {
+    width: 100%;
   }
   /* mobile index */
   .body-quien {
@@ -639,6 +709,14 @@ footer {
   }
   .carousel {
     padding: 0%;
+    height: 400px;
+  }
+  #carouselExampleCaptions {
+    margin-bottom: 0px;
+  }
+  #carouselExampleCaptions img {
+    height: 400px;
+    width: 100%;
   }
   .mandanos-mensaje {
     display: grid;
@@ -647,11 +725,43 @@ footer {
     margin-bottom: 100px;
     row-gap: 5rem;
     padding: 0%;
-    margin-left: 0px;
+    margin: 0px 0px;
+    text-align: center;
     grid-template-areas: "forms" "contactos";
+  }
+  .mandanos-mensaje h3 {
+    margin-top: 100px;
+    margin-bottom: 2rem;
+  }
+  .inner-form {
+    text-align: start;
   }
   .form-quienes {
     grid-area: forms;
+  }
+  .form-box-in {
+    padding-right: 0px;
+  }
+  .form-box-in .nom-in input {
+    width: 100%;
+  }
+  .form-box-in .mail-in input {
+    width: 100%;
+  }
+  .form-box-in .tel-in input {
+    width: 100%;
+  }
+  .form-box-in .comp-in input {
+    width: 100%;
+  }
+  .form-box-in textarea {
+    width: 100%;
+    resize: none;
+    height: 250px;
+  }
+  .form-box-in .subor-in {
+    margin-bottom: 25px;
+    width: 40%;
   }
   .contactos-quienes {
     grid-area: contactos;
@@ -673,6 +783,12 @@ footer {
   }
   .descripcion-de-proyectos {
     padding: 0px;
+  }
+  .img-descripcion {
+    margin: 0%;
+  }
+  .que-como {
+    padding: 0%;
   }
   /* mobile staff */
   .staff {
@@ -715,9 +831,33 @@ footer {
   .forms-y-contactos {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0px;
   }
   .contacto-main {
     text-align: center;
+  }
+  .form-box {
+    margin-bottom: 50px;
+  }
+  .form-p {
+    margin-bottom: 50px;
+  }
+  .contacto-box {
+    padding: 0px;
+  }
+  .form-box {
+    padding-right: 0px;
+  }
+  .form-box textarea {
+    width: 100%;
+    resize: none;
+    height: 250px;
+  }
+  .form-box .sub {
+    width: 40%;
+  }
+  .form-box .bor {
+    width: 40%;
   }
   /* mobile footer */
   footer {

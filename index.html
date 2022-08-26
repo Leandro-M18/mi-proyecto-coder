@@ -19,32 +19,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilo.css">
-    <meta name="description" content="(WMS) Water Managment Solutions, si esta en busqueda de servicios hidrologicos contactanos. Mejor calidad de servicios de hidrologia.">
-    <meta name="keywords" content="hydrologia, hydrology, water, water managment, watermanagment solutions, control de agua, manegamiento de agua, agua, servicio hydrologica, servicios de agua, water service">
+    <meta name="description"
+        content="(WMS) Water Managment Solutions, si esta en busqueda de servicios hidrologicos contactanos. Mejor calidad de servicios de hidrologia.">
+    <meta name="keywords"
+        content="hydrologia, hydrology, water, water managment, watermanagment solutions, control de agua, manegamiento de agua, agua, servicio hydrologica, servicios de agua, water service">
     <title>WMS-Water Management Solutions/inicio</title>
 </head>
 
 <body>
 
     <header class="container-fluid">
-        <div class="row">
-            <div class="col-2">
-                <div class="logo-img">
-                    <a href="./index.html"><img src="./multimedia/WMS.jpg" alt="logo"></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html"><img src="../multimedia/WMS.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="./index.html">INICIO</a>
+                    <a class="nav-link active" href="./paginas/quienes-somos.html">QUIENES SOMOS</a>
+                    <a class="nav-link active" href="./paginas/servicios.html">SERVICIOS</a>
+                    <a class="nav-link active" href="./paginas/staff.html">STAFF</a>
+                    <a class="nav-link active" href="./paginas/contacto.html">CONTACTO</a>
                 </div>
             </div>
-            <div class="col-6 offset-4">
-                <nav>
-                    <ul type="none">
-                        <li><a href="./index.html">INICIO</a></li>
-                        <li><a href="./paginas/quienes-somos.html">¿QUIENES SOMOS?</a></li>
-                        <li><a href="./paginas/servicios.html">SERVICIOS</a></li>
-                        <li><a href="./paginas/staff.html">STAFF</a></li>
-                        <li><a href="./paginas/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <main class="cointainer-fluid">
@@ -59,7 +59,12 @@
                     <h3>¿Quienes somos?</h3>
                 </div>
                 <div class="parafo-quienes">
-                    <p> WMS es una compañía consultora de ingeniería y gestión especializada en brindar asesoría en el buen manejo de aguas superficiales y subterráneas de proyectos privados y/o gubernamentales. WMS plantea soluciones técnicas teniendo en cuenta los estándares medioambientales, la adaptación al cambio climático, el uso de energía renovables, la inclusión social, la inversión retornable a los clientes, con la principal visión de proteger y optimizar el uso de los recursos hídricos para el presente y las décadas siguientes.</p>
+                    <p> WMS es una compañía consultora de ingeniería y gestión especializada en brindar asesoría en el
+                        buen manejo de aguas superficiales y subterráneas de proyectos privados y/o gubernamentales. WMS
+                        plantea soluciones técnicas teniendo en cuenta los estándares medioambientales, la adaptación al
+                        cambio climático, el uso de energía renovables, la inclusión social, la inversión retornable a
+                        los clientes, con la principal visión de proteger y optimizar el uso de los recursos hídricos
+                        para el presente y las décadas siguientes.</p>
                 </div>
             </div>
         </section>
@@ -67,7 +72,8 @@
             <div class="titulo-servicios">
                 <h2>NUESTROS PROYECTOS</h2>
             </div>
-            <div id="carouselExampleCaptions" class="carousel slide offset-lg-1 offset-sm-0 col-lg-10 col-sm-12" data-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide offset-lg-1 offset-sm-0 col-lg-10 col-sm-12"
+                data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -119,20 +125,28 @@
         <section class="mandanos-mensaje">
             <div class="form-quienes">
                 <form action="enviar.php" method="post" enctype="text/plain" netlify>
-                    <div>
-                        <h3>Mandanos un mensaje</h3>
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" name="nombre" placeholder="ingresar nombre completo" required>
-                        <label for="mail">Email:</label>
-                        <input type="email" name="mail" placeholder="ingresar email" required><br>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="text" name="telefono" placeholder="ingresar tel." required>
-                        <label for="compañia">Nombre de compañia:</label>
-                        <input type="text" name="compañia" placeholder="ingresar compañia" required><br>
-                        <label for="mensaje">Escribir mensaje:</label><br>
+                    <div class="form-box-in">
+                        <h3>MANDANOS UN MENSAJE:</h3>
+                        <div class="nom-in">
+                            <label for="nombre">Nombre completo:</label>
+                            <input class="in-in" type="text" name="nombre" placeholder="ingresar nombre" required>
+                        </div>
+                        <div class="mail-in">
+                            <label for="mail">Email:</label>
+                            <input class="in-in" type="email" name="mail" placeholder="ingresar email" required>
+                        </div>
+                        <div class="tel-in">
+                            <label for="telefono">Teléfono:</label>
+                            <input class="in-in" type="text" name="telefono" placeholder="ingresar tel." required>
+                        </div>
+                        <div class="comp-in">
+                            <label for="compañia">Nombre de compañia:</label>
+                            <input class="in-in" type="text" name="compañia" placeholder="ingresar compañia" required>
+                        </div>
+                        <label for="mensaje">Escribe tu mensaje:</label><br>
                         <textarea name="mensaje" id="" cols="30" rows="5" placeholder="escribir mensaje"></textarea><br>
-                        <input type="submit" value="enviar mensaje">
-                        <input type="reset" value="borrar">
+                        <input class="subor-in" type="submit" value="enviar mensaje">
+                        <input class="subor-in" type="reset" value="borrar">
                     </div>
                 </form>
             </div>
@@ -151,7 +165,9 @@
     </main>
     <footer class="container-fluid">
         <div class="footer num">
-            <span><strong>PE:</strong><a href=""> +51 991 646 931</a></span><br><span><strong>NL:</strong> <a href=""> +31 (0)6 30594964</a></span> <br> <span> <strong>Email:</strong> <a href=""> info@wms.com.pe</a></span>
+            <span><strong>PE:</strong><a href=""> +51 991 646 931</a></span><br><span><strong>NL:</strong> <a href="">
+                    +31 (0)6 30594964</a></span> <br> <span> <strong>Email:</strong> <a href="">
+                    info@wms.com.pe</a></span>
         </div>
         <div class="vl">
         </div>
