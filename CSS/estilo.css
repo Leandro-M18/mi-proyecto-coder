@@ -894,5 +894,12 @@ footer {
     font-size: 20px;
   }
 }
+/*SM moblie*/
+@media only screen and (max-width: 400px) {
+  /*SM mobile contacts*/
+  .forms__contactos h2 {
+    font-size: 30px;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
