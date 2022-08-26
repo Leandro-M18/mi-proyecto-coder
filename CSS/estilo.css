@@ -765,6 +765,7 @@ footer {
   }
   .contactos-quienes {
     grid-area: contactos;
+    width: 100%;
   }
   /* mobile quienes somos */
   .np-content {
