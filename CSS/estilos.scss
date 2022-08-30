@@ -425,7 +425,7 @@ a:hover{
     margin: 150px 0px;
     color: white;
     img{
-        @include dim(20rem, 30rem);
+        @include dim(20rem, 100%);
         @include mbp(50px 0px,none, 0px)
     }
 }
