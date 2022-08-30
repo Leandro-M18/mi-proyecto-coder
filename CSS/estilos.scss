@@ -297,6 +297,13 @@ form h3{
 .contactos-quienes{
     grid-area: contactos;
 }
+
+a{
+    color: #fca311;
+}
+a:hover{
+    color: #fc7311;
+}
                                                  /* quienes-somos.html */
 
 .quienes-somos{
@@ -315,7 +322,7 @@ form h3{
     filter: brightness(0.8);
 }
 .quienes-descripcion{
-    padding: 40px;
+    padding: 50px 100px;
 }
 .que-como{
     display: flex;
@@ -383,12 +390,15 @@ form h3{
     padding: 20px;
 }
 .servicios--individuales {
-    display: flexbox;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    line-height: 30px;
+    ul{
+        list-style: inherit;
+    }
     h2{
         text-align: center;
+        margin-top: 50px;
     }
 }
 .primer-servicios{
@@ -401,9 +411,11 @@ form h3{
 }
 .prm{
     margin-bottom: 50px;
+    background: #273249;
 }
 .seg{
     margin-bottom: 0px;
+    color: black;
 }
 
 .servicio--img{
@@ -411,31 +423,14 @@ form h3{
 }
 .todos-servicios{
     margin: 150px 0px;
+    color: white;
     img{
-        @include dim(15rem, 25rem);
-        @include mbp(20px 0px, solid #14213d 2px, 0px)
+        @include dim(20rem, 30rem);
+        @include mbp(50px 0px,none, 0px)
     }
 }
 
-$mapa:  (
-    ivory: indigo, 
-    lightgreen: peru,
-    silver: teal,
-    lightblue: indianred,
 
-);
-
-@each $col, $font in $mapa {
-    .btn--#{$col} {
-        background-color: $col;
-        height: 650px;
-        border:$font 5px solid;
-        color: $font;
-        h2{
-            color:$font;
-        }
-    }
-}
 
                                                   /* staff.html */
 
@@ -781,6 +776,28 @@ footer{
 .david{
     margin-top: 50px;
 }
+
+
+/* servicios mobile*/
+
+.todos-servicios{
+    margin: 150px 0px;
+    color: white;
+    img{
+        @include dim(auto, 100%);
+        @include mbp(50px 0px,none, 0px)
+    }
+}
+.hidrogeologia{
+    background: white;
+    color: black;
+}
+.hidraulica{
+    background-color: #273249;
+    color: white;
+}
+
+
 
 
                                     /* contactos mobile */

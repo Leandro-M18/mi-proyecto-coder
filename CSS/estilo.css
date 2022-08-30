@@ -319,6 +319,14 @@ form h3 {
   grid-area: contactos;
 }
 
+a {
+  color: #fca311;
+}
+
+a:hover {
+  color: #fc7311;
+}
+
 /* quienes-somos.html */
 .quienes-somos {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/Kov\ lake.JPG);
@@ -340,7 +348,7 @@ form h3 {
 }
 
 .quienes-descripcion {
-  padding: 40px;
+  padding: 50px 100px;
 }
 
 .que-como {
@@ -417,13 +425,16 @@ form h3 {
 }
 
 .servicios--individuales {
-  display: flexbox;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  line-height: 30px;
+}
+.servicios--individuales ul {
+  list-style: inherit;
 }
 .servicios--individuales h2 {
   text-align: center;
+  margin-top: 50px;
 }
 
 .primer-servicios {
@@ -438,10 +449,12 @@ form h3 {
 
 .prm {
   margin-bottom: 50px;
+  background: #273249;
 }
 
 .seg {
   margin-bottom: 0px;
+  color: black;
 }
 
 .servicio--img {
@@ -450,53 +463,14 @@ form h3 {
 
 .todos-servicios {
   margin: 150px 0px;
+  color: white;
 }
 .todos-servicios img {
-  height: 15rem;
-  width: 25rem;
-  margin: 20px 0px;
-  border: solid #14213d 2px;
+  height: 20rem;
+  width: 30rem;
+  margin: 50px 0px;
+  border: none;
   padding: 0px;
-}
-
-.btn--ivory {
-  background-color: ivory;
-  height: 650px;
-  border: indigo 5px solid;
-  color: indigo;
-}
-.btn--ivory h2 {
-  color: indigo;
-}
-
-.btn--lightgreen {
-  background-color: lightgreen;
-  height: 650px;
-  border: peru 5px solid;
-  color: peru;
-}
-.btn--lightgreen h2 {
-  color: peru;
-}
-
-.btn--silver {
-  background-color: silver;
-  height: 650px;
-  border: teal 5px solid;
-  color: teal;
-}
-.btn--silver h2 {
-  color: teal;
-}
-
-.btn--lightblue {
-  background-color: lightblue;
-  height: 650px;
-  border: indianred 5px solid;
-  color: indianred;
-}
-.btn--lightblue h2 {
-  color: indianred;
 }
 
 /* staff.html */
@@ -821,6 +795,26 @@ footer {
   }
   .david {
     margin-top: 50px;
+  }
+  /* servicios mobile*/
+  .todos-servicios {
+    margin: 150px 0px;
+    color: white;
+  }
+  .todos-servicios img {
+    height: auto;
+    width: 100%;
+    margin: 50px 0px;
+    border: none;
+    padding: 0px;
+  }
+  .hidrogeologia {
+    background: white;
+    color: black;
+  }
+  .hidraulica {
+    background-color: #273249;
+    color: white;
   }
   /* contactos mobile */
   .form-box h2 {
