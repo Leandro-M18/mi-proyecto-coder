@@ -815,6 +815,8 @@ footer {
   .hidraulica {
     background-color: #273249;
     color: white;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
   }
   /* contactos mobile */
   .form-box h2 {
