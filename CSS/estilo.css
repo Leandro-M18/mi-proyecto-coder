@@ -631,7 +631,7 @@ footer {
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 990px) {
   nav img {
     height: 50px;
     width: auto;
@@ -764,6 +764,16 @@ footer {
   }
   .que-como {
     padding: 0%;
+  }
+  .quienes-descripcion {
+    padding: 50px 10%;
+  }
+  .box {
+    padding: 10%;
+  }
+  .credentials {
+    padding: 0px;
+    justify-content: start;
   }
   /* mobile staff */
   .staff {
