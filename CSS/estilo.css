@@ -795,13 +795,15 @@ footer {
     background-position: center;
     border: solid #071129 5px;
     margin-bottom: 50px;
+    width: 50%;
   }
   .staff-box__img-david {
     background-image: url(../multimedia/FOTO\ DAVID.jpg);
-    background-size: cover;
-    background-position: center;
-    border: solid #071129 5px;
-    margin-bottom: 50px;
+  }
+  .silvia, .david {
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
   }
   .david {
     margin-top: 50px;
