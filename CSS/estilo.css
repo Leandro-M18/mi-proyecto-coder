@@ -607,6 +607,7 @@ footer {
   font-size: 30px;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .footer a {
@@ -643,6 +644,10 @@ footer {
     width: 100%;
   }
   /* mobile index */
+  .index {
+    background-position: center;
+    background-size: cover;
+  }
   .body-quien {
     justify-content: center;
     display: grid;
@@ -737,11 +742,30 @@ footer {
     margin-bottom: 25px;
     width: 40%;
   }
+  .form-box-in .nom-in {
+    text-align: start;
+  }
+  .form-box-in .mail-in {
+    text-align: start;
+  }
+  .form-box-in .tel-in {
+    text-align: start;
+  }
+  .form-box-in .comp-in {
+    text-align: start;
+  }
+  .form-box-in .mensaje-in {
+    text-align: start;
+  }
   .contactos-quienes {
     grid-area: contactos;
     width: 100%;
   }
   /* mobile quienes somos */
+  .quienes-somos {
+    background-position: center;
+    background-size: cover;
+  }
   .np-content {
     display: flex;
     flex-direction: column;
@@ -775,9 +799,15 @@ footer {
     padding: 0px;
     justify-content: start;
   }
+  /*mobile servicios*/
+  .servicios {
+    background-position: center;
+    background-size: cover;
+  }
   /* mobile staff */
   .staff {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../multimedia/DSCF9256.JPG);
+    background-position: center;
+    background-size: cover;
   }
   .staff-boxes {
     margin-top: 100px;
@@ -831,6 +861,21 @@ footer {
     padding-bottom: 50px;
   }
   /* contactos mobile */
+  .form-box .nombre {
+    text-align: start;
+  }
+  .form-box .email {
+    text-align: start;
+  }
+  .form-box .telephone {
+    text-align: start;
+  }
+  .form-box .compania {
+    text-align: start;
+  }
+  .form-box .mensaje {
+    text-align: start;
+  }
   .form-box h2 {
     font-size: 1.7rem;
   }
