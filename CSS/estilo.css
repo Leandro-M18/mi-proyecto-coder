@@ -645,7 +645,7 @@ footer {
   }
   /* mobile index */
   .index {
-    background-position: center;
+    background-position: center center;
     background-size: cover;
   }
   .body-quien {
@@ -763,7 +763,7 @@ footer {
   }
   /* mobile quienes somos */
   .quienes-somos {
-    background-position: center;
+    background-position: center center;
     background-size: cover;
   }
   .np-content {
@@ -801,12 +801,12 @@ footer {
   }
   /*mobile servicios*/
   .servicios {
-    background-position: center;
+    background-position: center center;
     background-size: cover;
   }
   /* mobile staff */
   .staff {
-    background-position: center;
+    background-position: center center;
     background-size: cover;
   }
   .staff-boxes {
