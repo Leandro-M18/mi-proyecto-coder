@@ -103,10 +103,6 @@ form {
   background-color: #f78432;
 }
 
-ul {
-  list-style: circle;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   background: #14213d;
@@ -170,6 +166,10 @@ a:hover {
 
 header.container-fluid {
   padding-left: 25px;
+}
+
+li {
+  margin-bottom: 20px;
 }
 
 /* index.html */
