@@ -414,6 +414,7 @@ a:hover{
 }
 .prm{
     margin-bottom: 50px;
+    padding-top: 50px;
     background: #273249;
 }
 .seg{
@@ -425,7 +426,7 @@ a:hover{
     text-align: center;
 }
 .todos-servicios{
-    margin: 100px 0px;
+    margin: 0px;
     color: white;
     img{
         @include dim(20rem, 100%);

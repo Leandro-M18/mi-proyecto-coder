@@ -449,6 +449,7 @@ a:hover {
 
 .prm {
   margin-bottom: 50px;
+  padding-top: 50px;
   background: #273249;
 }
 
@@ -462,7 +463,7 @@ a:hover {
 }
 
 .todos-servicios {
-  margin: 100px 0px;
+  margin: 0px;
   color: white;
 }
 .todos-servicios img {
