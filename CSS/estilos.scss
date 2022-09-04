@@ -425,7 +425,7 @@ a:hover{
     text-align: center;
 }
 .todos-servicios{
-    margin: 150px 0px;
+    margin: 100px 0px;
     color: white;
     img{
         @include dim(20rem, 100%);
@@ -784,11 +784,6 @@ footer{
     padding: 0px;
     justify-content: start;
 }
-                                        /*mobile servicios*/
-.servicios{
-    background-position: center center;
-    background-size: cover;
-    }
                                         /* mobile staff */
 
 .staff{
@@ -829,10 +824,14 @@ footer{
 }
 
 
-/* servicios mobile*/
-
+                                                /* servicios mobile*/
+.servicios{
+    background-position: center center;
+    background-size: cover;
+    }
 .todos-servicios{
-    margin: 150px 0px;
+    margin-bottom: 100px;
+    margin-top: 0px;
     color: white;
     img{
         @include dim(auto, 100%);
