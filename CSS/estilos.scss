@@ -130,6 +130,15 @@ a:hover{
     transition:0.5s;
 }
 
+.hed-nav{
+    margin: 0px;
+    padding: 0px;
+    li{
+    margin: 0px;
+    padding: 0px;
+    }
+}
+
 .navbar-toggler-icon {
     border-radius: 5px;
     background: #fca311;
@@ -398,6 +407,7 @@ a:hover{
     line-height: 30px;
     ul{
         list-style: inherit;
+        margin-left: 15px;
     }
     h2{
         text-align: center;
@@ -567,6 +577,11 @@ footer{
     margin-bottom: 10px;
 }
 .footer{
+    li{
+        list-style: none;
+        line-height: 5px;
+        margin: 10px;
+    }
     a{
         color: white;
         text-decoration: none;
@@ -578,7 +593,23 @@ footer{
         font-weight: 600;
     }
 }
-
+.num{
+    ul{
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.redes{
+    ul{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
 .redes i{
     font-size: 45px;
     color: white;
@@ -587,6 +618,7 @@ footer{
 .redes i:hover{
     color: #fca311;
 }
+
 
                                                         /*MOBILE*/
 
@@ -600,6 +632,13 @@ footer{
     }
     .navbar-brand img{
         width: 100%;
+    }
+
+    .navbar-nav{
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
     }
                                                     /* mobile index */
     
