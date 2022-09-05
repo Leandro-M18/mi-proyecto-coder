@@ -32,6 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 nav li {
   display: inline-block;
   text-decoration: none;
@@ -141,6 +142,7 @@ a:hover {
   margin: 0px;
   padding: 0px;
 }
+
 .hed-nav li {
   margin: 0px;
   padding: 0px;
@@ -197,7 +199,7 @@ li {
   margin: 0px 100px;
   column-gap: 40px;
   row-gap: 20px;
-  grid-template-areas: "img1 quienes" "img1 parafo-quienes";
+  grid-template-areas: "img1 quienes""img1 parafo-quienes";
 }
 
 .imagen-de-equipo {
@@ -211,6 +213,7 @@ li {
 .h3-quienes__index {
   grid-area: quienes;
 }
+
 .h3-quienes__index h3 {
   color: #fca311;
   font-size: 30px;
@@ -222,6 +225,7 @@ li {
 .parafo-quienes {
   grid-area: parafo-quienes;
 }
+
 .parafo-quienes p {
   font-size: 18px;
   line-height: 2em;
@@ -245,6 +249,7 @@ li {
   height: 400px;
   width: 400px;
 }
+
 .contactos-quienes h2 {
   color: white;
   font-size: 35px;
@@ -258,6 +263,7 @@ li {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .contactos-quienes-icon i {
   font-size: 75px;
   color: #fca311;
@@ -267,6 +273,7 @@ li {
   color: white;
   text-align: center;
 }
+
 .contactos-quienes-numeros p {
   margin: 0%;
 }
@@ -274,6 +281,7 @@ li {
 #carouselExampleCaptions {
   margin-bottom: 100px;
 }
+
 #carouselExampleCaptions img {
   height: 500px;
   width: 100%;
@@ -298,27 +306,34 @@ form h3 {
 .form-box-in {
   padding-right: 50px;
 }
+
 .form-box-in .nom-in input {
   width: 555px;
 }
+
 .form-box-in .mail-in input {
   width: 658px;
 }
+
 .form-box-in .tel-in input {
   width: 633px;
 }
+
 .form-box-in .comp-in input {
   width: 525px;
 }
+
 .form-box-in textarea {
   width: 710px;
   resize: none;
   height: 250px;
 }
+
 .form-box-in .sub-in {
   margin-bottom: 25px;
   width: 30%;
 }
+
 .form-box-in .bor-in {
   margin-bottom: 25px;
   width: 30%;
@@ -385,6 +400,7 @@ a:hover {
 .nuestros-proyectos {
   margin-top: 50px;
 }
+
 .nuestros-proyectos h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -438,10 +454,12 @@ a:hover {
   justify-content: center;
   line-height: 30px;
 }
+
 .servicios--individuales ul {
   list-style: inherit;
   margin-left: 15px;
 }
+
 .servicios--individuales h2 {
   text-align: center;
   margin-top: 50px;
@@ -476,6 +494,7 @@ a:hover {
   margin: 0px;
   color: white;
 }
+
 .todos-servicios img {
   height: 20rem;
   width: 100%;
@@ -497,7 +516,8 @@ a:hover {
   margin-top: 100px;
 }
 
-.staff-box__img-silvia, .staff-box__img-david {
+.staff-box__img-silvia,
+.staff-box__img-david {
   background-image: url(../multimedia/20200729_203050.jpg);
   background-size: cover;
   background-position: center;
@@ -538,6 +558,7 @@ hr.contacto {
   padding: 50px 30px;
   text-align: center;
 }
+
 .forms__contactos h2 {
   color: white;
   font-size: 45px;
@@ -546,22 +567,27 @@ hr.contacto {
 .form-box {
   padding-right: 250px;
 }
+
 .form-box h2 {
   margin: 30px 0px;
 }
+
 .form-box input {
   width: 100%;
   margin-bottom: 10px;
 }
+
 .form-box textarea {
   width: 100%;
   resize: none;
   height: 250px;
 }
+
 .form-box .sub {
   margin-bottom: 25px;
   width: 30%;
 }
+
 .form-box .bor {
   margin-bottom: 25px;
   width: 30%;
@@ -572,6 +598,7 @@ hr.contacto {
   justify-content: center;
   margin: 75px 0px;
 }
+
 .forms__contactos-phone-icon i {
   font-size: 110px;
   color: #fca311;
@@ -626,13 +653,16 @@ footer {
   line-height: 5px;
   margin: 10px;
 }
+
 .footer a {
   color: white;
   text-decoration: none;
 }
+
 .footer a:hover {
   color: #fca311;
 }
+
 .footer strong {
   font-weight: 600;
 }
@@ -668,21 +698,26 @@ footer {
     height: 50px;
     width: auto;
   }
+
   ul a {
     font-size: 15px;
   }
+
   .navbar-brand img {
     width: 100%;
   }
+
   .navbar-nav ul {
     display: flex;
     flex-direction: column;
   }
+
   /* mobile index */
   .index {
     background-position: center center;
     background-size: cover;
   }
+
   .body-quien {
     justify-content: center;
     display: grid;
@@ -693,14 +728,16 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
     column-gap: 0px;
-    grid-template-areas: "img1" "quienes" "parafo-quienes";
+    grid-template-areas: "img1""quienes""parafo-quienes";
   }
+
   .imagen-de-equipo {
     grid-area: img1;
     background-image: url(../multimedia/DSCF2085-alcantarilla.JPG);
     background-size: cover;
     width: 100%;
   }
+
   .h3-quienes__index {
     grid-area: quienes;
     display: flex;
@@ -709,29 +746,36 @@ footer {
     align-content: flex-end;
     padding: 0% 10%;
   }
+
   .parafo-quienes {
     grid-area: parafo-quienes;
     padding: 0% 10%;
   }
+
   .parafo-quienes p {
     font-size: 16px;
     line-height: normal;
   }
+
   .main-header h1 {
     color: white;
     opacity: 100%;
   }
+
   .carousel {
     padding: 0%;
     height: 400px;
   }
+
   #carouselExampleCaptions {
     margin-bottom: 0px;
   }
+
   #carouselExampleCaptions img {
     height: 400px;
     width: 100%;
   }
+
   .mandanos-mensaje {
     display: grid;
     grid-template-columns: 1fr;
@@ -741,66 +785,84 @@ footer {
     padding: 0%;
     margin: 0px 0px;
     text-align: center;
-    grid-template-areas: "forms" "contactos";
+    grid-template-areas: "forms""contactos";
   }
+
   .mandanos-mensaje h3 {
     margin-top: 100px;
     margin-bottom: 2rem;
   }
+
   .inner-form {
     text-align: start;
   }
+
   .form-quienes {
     grid-area: forms;
   }
+
   .form-box-in {
     padding: 0px 10px;
   }
+
   .form-box-in .nom-in input {
     width: 100%;
   }
+
   .form-box-in .mail-in input {
     width: 100%;
   }
+
   .form-box-in .tel-in input {
     width: 100%;
   }
+
   .form-box-in .comp-in input {
     width: 100%;
   }
+
   .form-box-in textarea {
     width: 100%;
     resize: none;
     height: 250px;
   }
+
   .form-box-in .subor-in {
     margin-bottom: 25px;
     width: 40%;
   }
+
   .form-box-in .nom-in {
     text-align: start;
   }
+
   .form-box-in .mail-in {
     text-align: start;
   }
+
   .form-box-in .tel-in {
     text-align: start;
   }
+
   .form-box-in .comp-in {
     text-align: start;
   }
+
   .form-box-in .mensaje-in {
     text-align: start;
   }
+
   .contactos-quienes {
     grid-area: contactos;
     width: 100%;
   }
+
   /* mobile quienes somos */
   .quienes-somos {
     background-position: center center;
     background-size: cover;
   }
+
   .np-content {
     display: flex;
     flex-direction: column;
@@ -809,47 +871,60 @@ footer {
     margin-right: 100px;
     margin-left: 100px;
   }
+
   .img-proyectos {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
   }
+
   .descripcion-de-proyectos {
     padding: 0px;
   }
+
   .img-descripcion {
     margin: 0%;
   }
+
   .que-como {
     padding: 0%;
   }
+
   .quienes-descripcion {
     padding: 50px 10%;
   }
+
   .box {
     padding: 10%;
   }
+
   .credentials {
     padding: 0px;
     justify-content: start;
   }
+
   /* mobile staff */
   .staff {
     background-position: center center;
     background-size: cover;
   }
+
   .staff-boxes {
     margin-top: 100px;
     margin-bottom: 150px;
   }
+
   .staff-box-text-1 {
     grid-area: descripcion1;
   }
+
   .staff-box-text-2 {
     grid-area: descripcion2;
   }
-  .staff-box__img-silvia, .staff-box__img-david {
+
+  .staff-box__img-silvia,
+  .staff-box__img-david {
     background-image: url(../multimedia/20200729_203050.jpg);
     background-size: cover;
     background-position: center;
@@ -857,27 +932,34 @@ footer {
     margin-bottom: 50px;
     width: 50%;
   }
+
   .staff-box__img-david {
     background-image: url(../multimedia/FOTO\ DAVID.jpg);
   }
-  .silvia, .david {
+
+  .silvia,
+  .david {
     justify-content: center;
     margin: 0%;
     padding: 0%;
   }
+
   .david {
     margin-top: 50px;
   }
+
   /* servicios mobile*/
   .servicios {
     background-position: center center;
     background-size: cover;
   }
+
   .todos-servicios {
     margin-bottom: 100px;
     margin-top: 0px;
     color: white;
   }
+
   .todos-servicios img {
     height: auto;
     width: 100%;
@@ -885,105 +967,133 @@ footer {
     border: none;
     padding: 0px;
   }
+
   .hidrogeologia {
     background: white;
     color: black;
   }
+
   .hidraulica {
     background-color: #273249;
     color: white;
     margin-bottom: 0px;
     padding-bottom: 50px;
   }
+
   /* contactos mobile */
   .form-box .nombre {
     text-align: start;
   }
+
   .form-box .email {
     text-align: start;
   }
+
   .form-box .telephone {
     text-align: start;
   }
+
   .form-box .compania {
     text-align: start;
   }
+
   .form-box .mensaje {
     text-align: start;
   }
+
   .form-box h2 {
     font-size: 1.7rem;
   }
+
   .forms__form p {
     font-size: 17px;
   }
+
   .forms-y-contactos {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
   }
+
   .contacto-main {
     text-align: center;
   }
+
   .form-box {
     margin-bottom: 50px;
   }
+
   .form-p {
     margin-bottom: 50px;
   }
+
   .contacto-box {
     padding: 0px;
   }
+
   .form-box {
     padding-right: 0px;
   }
+
   .form-box textarea {
     width: 100%;
     resize: none;
     height: 250px;
   }
+
   .form-box .sub {
     width: 40%;
   }
+
   .form-box .bor {
     width: 40%;
   }
+
   /* mobile footer */
   footer {
     height: 180px;
     flex-direction: column;
   }
+
   footer .num {
     display: none;
   }
+
   footer .footer {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 13px;
   }
+
   .redes i {
     font-size: 50px;
     color: white;
     letter-spacing: 10px;
   }
+
   .redes a i {
     padding-left: 3px;
     padding-right: 3px;
   }
+
   .vl {
     display: none;
   }
+
   .footer__local {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 13px;
   }
+
   .footer__local i {
     font-size: 20px;
   }
 }
+
 /*SM moblie*/
 @media only screen and (max-width: 400px) {
+
   /*SM mobile contacts*/
   .forms__contactos h2 {
     font-size: 30px;
