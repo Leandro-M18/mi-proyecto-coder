@@ -1001,3 +1001,14 @@ footer{
         }
     }
 }
+
+@media only screen and (min-width:990px) and (max-width:1300px){
+    .form-box{
+        padding-right: 25px
+    }
+    .forms__contactos{
+        h2{
+            font-size: 35px;
+        }
+    }
+}
