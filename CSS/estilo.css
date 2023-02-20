@@ -153,6 +153,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
+  font-size: 25px;
 }
 
 .navbar-light .navbar-nav .nav-link.active:hover {
@@ -169,8 +170,16 @@ a:hover {
   background-attachment: fixed;
 }
 
+.navbar-brand{
+  width: 30%;
+}
+
+#navbarNavAltMarkup{
+  justify-content: flex-end;
+}
+
 .navbar-brand img {
-  width: 10%;
+  width: 30%;
 }
 
 header.container-fluid {
