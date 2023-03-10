@@ -324,13 +324,19 @@ form h3 {
   resize: none;
   height: 250px;
 }
-.form-box-in .sub-in {
+.form-box-in .subor-in {
   margin-bottom: 25px;
   width: 30%;
+  background-color: rgb(219, 219, 219);
+  border: 0px solid;
+  transition: border-radius 1s;
 }
-.form-box-in .bor-in {
+
+.form-box-in .subor-in:hover {
   margin-bottom: 25px;
   width: 30%;
+  background-color: rgb(179, 179, 179);
+  border-radius: 7px;
 }
 
 .contactos-quienes {
@@ -570,10 +576,31 @@ hr.contacto {
 .form-box .sub {
   margin-bottom: 25px;
   width: 30%;
+  background-color: rgb(219, 219, 219);
+  border: 0px solid;
+  transition: border-radius 1s;
 }
+
+.form-box .sub:hover {
+margin-bottom: 25px;
+width: 30%;
+background-color: rgb(179, 179, 179);
+border-radius: 7px;
+}
+
 .form-box .bor {
   margin-bottom: 25px;
   width: 30%;
+  background-color: rgb(219, 219, 219);
+  border: 0px solid;
+  transition: border-radius 1s;
+}
+
+.form-box .bor:hover {
+margin-bottom: 25px;
+width: 30%;
+background-color: rgb(179, 179, 179);
+border-radius: 7px;
 }
 
 .forms__contactos-phone-icon {
